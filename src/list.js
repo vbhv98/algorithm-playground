@@ -1,4 +1,4 @@
-let names = ['largest common subsequence']
+let names = ['largest common subsequence', 'find missing']
 
 let lis = names.map((e, i) => ({
   name: e,

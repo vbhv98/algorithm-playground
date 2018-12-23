@@ -7,16 +7,16 @@ import lis from './list'
 
 const Ul = styled.ul`
   list-style: none;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  width: 80vw;
 `
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <h1>Algorithm Try-out</h1>
+      <center>
+        <h1 style={{ padding: '1em 3em' }}>Algorithm Try-out</h1>
         <Ul>
           {lis.map(e => (
             <li key={`${e.path}`}>
@@ -24,7 +24,7 @@ class App extends Component {
             </li>
           ))}
         </Ul>
-      </div>
+      </center>
     )
   }
 }
